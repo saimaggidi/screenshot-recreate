@@ -135,6 +135,9 @@
     background-clip: text;
   }
 }
+.menu-icon {
+  color: hsl(var(--navy-dark));
+}
 
 @layer utilities {
   .animate-fade-in {

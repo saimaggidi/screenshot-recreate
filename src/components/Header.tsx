@@ -36,7 +36,7 @@ const Header = () => {
           {/* Mobile Hamburger Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-primary-foreground"
+            className="md:hidden p-2 menu-icon"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -45,7 +45,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-navy/98 backdrop-blur-sm border-b border-muted/10">
+          <div className="md:hidden  top-full left-0 right-0 bg-navy/98 backdrop-blur-sm border-b border-muted/10">
             <nav className="flex flex-col py-4">
               {navItems.map((item) => (
                 <a
