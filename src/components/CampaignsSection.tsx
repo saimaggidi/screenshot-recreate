@@ -66,12 +66,12 @@ const CampaignsSection = () => {
           </div>
         </div>
 
-        {/* Campaigns Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Campaigns Grid - Horizontal scroll on mobile */}
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-4 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 scrollbar-hide">
           {campaigns.map((campaign) => (
             <div
               key={campaign.title}
-              className="group relative rounded-xl overflow-hidden cursor-pointer"
+              className="group relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 w-[260px] md:w-auto"
             >
               {/* Background */}
               <div className={`aspect-[3/4] bg-gradient-to-br ${campaign.color} relative`}>
