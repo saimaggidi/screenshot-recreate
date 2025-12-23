@@ -23,11 +23,11 @@ const ContactSection = () => {
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-5 h-5 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9182029042</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>123 Tech Park, Silicon Valley, CA</span>
+                <span> 1st floor IT Hub, Nizamabad</span>
               </div>
             </div>
 
