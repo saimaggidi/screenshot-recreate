@@ -9,6 +9,8 @@ import DigitalMarketing from "./pages/DigitalMarketing";
 import CloudServices from "./pages/CloudServices";
 import WebDevelopment from "./pages/WebDevelopment";
 import AppDevelopment from "./pages/AppDevelopment";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/cloud-services" element={<CloudServices />} />
           <Route path="/web-development" element={<WebDevelopment />} />
           <Route path="/app-development" element={<AppDevelopment />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
