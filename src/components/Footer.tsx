@@ -16,8 +16,8 @@ const footerCompany = [
 ];
 
 const footerLegal = [
-  { name: "Privacy Policy", href: "#" },
-  { name: "Terms of Service", href: "#" },
+  { name: "Privacy Policy", href: "/privacy-policy" },
+  { name: "Terms of Service", href: "/terms-of-service" },
 ];
 
 const Footer = () => {
@@ -89,12 +89,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLegal.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-muted-foreground hover:text-primary-foreground text-sm transition-colors"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
